@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strconv"
 	"syscall"
 	"unsafe"
 
@@ -19,8 +20,13 @@ func main() {
 		log.Fatalf("Usage: %s DLL EXE", os.Args[0])
 	}
 
-	dllFile, exeFile := os.Args[1], os.Args[2]
-	inject(dllFile, exeFile)
+	// dllFile, exeFile := os.Args[1], os.Args[2]
+	// injectExe(dllFile, exeFile)
+
+	dllFile, pidString := os.Args[1], os.Args[2]
+	pid, err := strconv.ParseInt(pidString, 10, 64)
+	must(err)
+	injectPID(dllFile, pid)
 }
 
 func loadDebugPrivileges() {

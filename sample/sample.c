@@ -3,19 +3,14 @@
 #include <unistd.h>
 
 int main() {
-    if (getenv("WAIT")) {
-        /* printf("Waiting for user input...\n"); */
-        /* fflush(stdout); */
-        /* char str[1024]; */
-        /* gets(str); */
-
-        for (int i = 0; i < 10; i++) {
-            printf("Sleeping 250ms.. (%d)\n", i);
-        fflush(stdout);
-            usleep(1000 * 250);
-        }
-    }
-
+    printf("My PID is %lu (0x%lx)\n", GetCurrentProcessId(), GetCurrentProcessId());
+    fflush(stdout);
+    MessageBoxW(
+            NULL,
+            L"Close when ready...",
+            L"First message box",
+            MB_OK
+    );
     char *ex = getenv("HOOK");
     if (ex && strcmp("1", ex) == 0) {
         HMODULE mod = LoadLibraryW(L"detour_test_lib.dll");
