@@ -1,0 +1,7 @@
+github.com/itchio/ox v0.0.0-20190219033110-ce3399ecbe0f h1:Q/1+PT2vnXMsVX9+/Wc9jxlcPffrUmjLDEfRWQ5xLbc=
+github.com/itchio/ox v0.0.0-20190219033110-ce3399ecbe0f/go.mod h1:l6WQGsle9BqRCNLmVfgw2g/jxAWYDod3BvDOLSET19Y=
+github.com/itchio/wharf v0.0.0-20181213155255-5c074d8f87a4/go.mod h1:+POTUNOKzhCiFy3BM0Qb7RHLTHazlOcypTnt7QbOeks=
+github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
+golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
+golang.org/x/sys v0.0.0-20190318195719-6c81ef8f67ca h1:o2TLx1bGN3W+Ei0EMU5fShLupLmTOU95KvJJmfYhAzM=
+golang.org/x/sys v0.0.0-20190318195719-6c81ef8f67ca/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
