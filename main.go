@@ -19,10 +19,8 @@ func main() {
 		log.Fatalf("Usage: %s DLL EXE", os.Args[0])
 	}
 
-	dllFile, execFile := os.Args[1], os.Args[2]
-	log.Printf("Injecting (%s) into (%s)", dllFile, execFile)
-
-	inject(dllFile, execFile)
+	dllFile, exeFile := os.Args[1], os.Args[2]
+	inject(dllFile, exeFile)
 }
 
 func loadDebugPrivileges() {
