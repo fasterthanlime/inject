@@ -21,6 +21,8 @@ func main() {
 
 	dllFile, execFile := os.Args[1], os.Args[2]
 	log.Printf("Injecting (%s) into (%s)", dllFile, execFile)
+
+	inject(dllFile, execFile)
 }
 
 func loadDebugPrivileges() {
